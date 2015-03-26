@@ -1,0 +1,18 @@
+;; Object long/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "long/"
+  :tables (list 
+   (semanticdb-table ".emacs"
+    :major-mode 'emacs-lisp-mode
+    :tags nil
+    :file ".emacs"
+    :pointmax 25873
+    :fsize 25872
+    :lastmodtime '(21779 23321 462348 282000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!long!semantic.cache"
+  :semantic-tag-version "2.1"
+  :semanticdb-version "2.1"
+  )
