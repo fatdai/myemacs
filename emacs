@@ -18,17 +18,15 @@
 (setq default-sendmail-coding-system 'utf-8-unix) ; email
 (setq default-terminal-coding-system 'utf-8-unix) ; terminal
 
-;; theme
-;(if window-system
-;(progn
-;(require 'color-theme)
-;(color-theme-initialize)
-;(color-theme-calm-forest)))
- 
-(if (not window-system)
-(progn
-(set-face-foreground 'default "gray")
-(set-face-background 'default "black")))
+;;================================ 
+;;为我的emacs配置主题色彩 (color-theme-色彩名称) 
+;;================================ 
+(if (>= emacs-major-version 24)  ;; 这是说，如果是 Emacs 24, 则执行后面一句 
+     (load-theme 'manoj-dark t)  ;; Emacs 24 下使用内嵌的 load-theme 机制加载风格 
+   (when (require 'color-theme nil 'noerror)  ;; 这句是说，试着加载 color-theme 包，如果出错就算了 
+     (color-theme-initialize)  ;; 初始化 color-theme 包 
+     (color-theme-clarity)     ;; 选择 color-theme 包中的 clarity 风格 
+    ))  
 
 ;; no scroll bar
 (scroll-bar-mode -1)
