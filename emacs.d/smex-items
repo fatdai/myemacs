@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ package-delete
+ package-list-packages
  eval-region
  flymake-jshint-load
- package-list-packages
  load-file
  helm-mode
  flymake-mode
- package-delete
 )
 
 ;; ----- smex-data -----
@@ -16,10 +16,10 @@
  (js3-mode . 2)
  (auto-complete . 6)
  (js2-mode . 1)
- (package-delete . 1)
+ (package-delete . 4)
  (flymake-mode . 2)
  (flymake-jshint-load . 11)
  (helm-mode . 1)
- (package-list-packages . 1)
+ (package-list-packages . 2)
  (eval-region . 1)
 )
